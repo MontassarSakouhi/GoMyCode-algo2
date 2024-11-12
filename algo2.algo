@@ -1,0 +1,103 @@
+Leap Year Checker
+
+ALGORITHM Ticket Pricing
+VAR
+    age: INTEGER;
+
+BEGIN
+    read(age);
+    
+    IF (age <= 12) THEN
+        write("10$");
+    ELSE IF (age >= 13 AND age <= 18) THEN
+        write("15$");
+    ELSE IF (age > 18) THEN
+        write("20$");
+    ELSE
+        write("invalid age");
+    END IF;
+END
+
+
+
+ALGORITHM Ticket Pricing
+VAR
+    age: INTEGER;
+
+BEGIN
+    read(age);
+    
+    IF (age <= 12) THEN
+        write("10$");
+    ELSE IF (age >= 13 AND age <= 18) THEN
+        write("15$");
+    ELSE IF (age > 18) THEN
+        write("20$");
+    ELSE
+        write("invalid age");
+    END IF;
+END
+
+
+ALGORITHM Weather Clothing Advise
+VAR
+    temp:INTEGER;
+    status:STRING;
+
+    
+BEGIN
+write("give the temperature")
+    read(temp);
+write("if its raining type raining and if not type sunny")
+    read(status);
+   IF(temp<20 && status="raining")THEN
+   write("netflix and chill")
+   ELSE IF(temp>35 and status="sunny")THEN
+   write("tba7bi7a time")
+   ELSE write("3inek mizenek 5achmek bascoula")
+END
+
+ALGORITHM Fibonacci
+VAR
+    n, a, b, temp, i: INTEGER;
+
+BEGIN
+    write("Enter the value of n");
+    read(n);
+    
+    a := 0;
+    b := 1;
+    
+    FOR i FROM 0 TO n - 1 DO
+        temp := a;
+        a := b;
+        b := temp + b;
+    END FOR
+    
+    write("The Fibonacci number is ", a);
+END
+
+
+
+
+ALGORITHM Power
+VAR
+    n, p, result, i: INTEGER;
+
+BEGIN
+    write("Enter the base number (n)");
+    read(n);
+    
+    write("Enter the power (p)");
+    read(p);
+    
+    result := 1;
+    
+    FOR i FROM 0 TO p - 1 DO
+        result := result * n;
+    END FOR
+    
+    write("The result of n^p is ", result);
+END
+
+
